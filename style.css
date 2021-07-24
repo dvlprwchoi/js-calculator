@@ -1,0 +1,54 @@
+div {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 15px;
+}
+
+html {
+    min-width: 420px;
+    /* max-width: 768px; */
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    border: 5px solid black;
+    padding: 10px;
+    margin: 15px;
+}
+
+.calContainer, .numContainer, .operatorContainer, .resetContainer {
+    border: 3px solid gray;
+    padding: 10px;
+    margin: 15px;
+}
+
+h1, footer p {
+    text-align: center;
+}
+
+.inputButtons {
+    display: grid;
+}
+
+.numContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.operatorContainer {
+    display: flex;
+}
+
+@media (min-width: 415px) {
+    body {
+        background-color: skyblue;
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        background-color: gray;
+    }
+}
