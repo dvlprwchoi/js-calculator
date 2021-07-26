@@ -25,6 +25,12 @@ const pressButton = (event) => {
     console.log(getButtonId);
 }
 
+// Reset
+const pressReset = () => {
+    document.getElementById("inputBox").innerHTML = "";
+    console.log(getButtonId);
+}
+
 // num9.addEventListener("click", pressButton);
 
 // EvnetListener
@@ -45,9 +51,8 @@ multiply.onclick = pressButton;
 divide.onclick = pressButton;
 equal.onclick = pressButton;
 
-reset.onclick = pressButton;
+reset.onclick = pressReset;
 
 // Functions
-// Reset
 // Display
 // Calculate
