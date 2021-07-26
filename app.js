@@ -59,7 +59,3 @@ divide.onclick = pressButton;
 equal.onclick = calculate;
 
 reset.onclick = pressReset;
-
-// Functions
-// Display
-// Calculate
