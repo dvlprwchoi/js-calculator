@@ -1,3 +1,4 @@
+// DOM
 const num9 = document.getElementById("num9");
 const num8 = document.getElementById("num8");
 const num7 = document.getElementById("num7");
@@ -17,14 +18,16 @@ const equll = document.getElementById("equal");
 
 const reset = document.getElementById("reset");
 
+// Functions
 const pressButton = (event) => {
     const getButtonId = event.target.id;
-    document.getElementById("inputBox").innerHTML = document.getElementById(`${getButtonId}`).value;
+    document.getElementById("inputBox").innerHTML += document.getElementById(`${getButtonId}`).value;
     console.log(getButtonId);
 }
 
 // num9.addEventListener("click", pressButton);
 
+// EvnetListener
 num9.onclick = pressButton;
 num8.onclick = pressButton;
 num7.onclick = pressButton;
@@ -44,3 +47,7 @@ equal.onclick = pressButton;
 
 reset.onclick = pressButton;
 
+// Functions
+// Reset
+// Display
+// Calculate
