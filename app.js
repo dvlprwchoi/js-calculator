@@ -14,26 +14,33 @@ const add = document.getElementById("add");
 const subtract = document.getElementById("subtract");
 const multiply = document.getElementById("multiply");
 const divide = document.getElementById("divide");
-const equll = document.getElementById("equal");
+const equal = document.getElementById("equal");
 
 const reset = document.getElementById("reset");
 
 // Functions
 const pressButton = (event) => {
     const getButtonId = event.target.id;
-    document.getElementById("inputBox").innerHTML += document.getElementById(`${getButtonId}`).value;
+    document.getElementById("inputBox").innerText += document.getElementById(`${getButtonId}`).value;
     console.log(getButtonId);
 }
 
 // Reset
-const pressReset = () => {
-    document.getElementById("inputBox").innerHTML = "";
+const pressReset = (event) => {
+    const getButtonId = event.target.id;
+    document.getElementById("inputBox").innerText = "";
     console.log(getButtonId);
 }
 
-// num9.addEventListener("click", pressButton);
+// Calculate
+const calculate = (event) => {
+    const getButtonId = event.target.id;
+    document.getElementById("inputBox").innerText = eval(document.getElementById("inputBox").innerText);
+    console.log(getButtonId);
+}
 
 // EvnetListener
+// num9.addEventListener("click", pressButton);
 num9.onclick = pressButton;
 num8.onclick = pressButton;
 num7.onclick = pressButton;
@@ -49,7 +56,7 @@ add.onclick = pressButton;
 subtract.onclick = pressButton;
 multiply.onclick = pressButton;
 divide.onclick = pressButton;
-equal.onclick = pressButton;
+equal.onclick = calculate;
 
 reset.onclick = pressReset;
 
