@@ -24,7 +24,7 @@ header h1 {
 }
 
 .calContainer {
-  background-color: rgb(58, 34, 34);
+  background-color: rgba(58, 34, 34, 0.8);
 }
 
 .inputBox {
@@ -57,33 +57,33 @@ header h1 {
 }
 
 .numContainer button {
-  background-color: rgba(83, 83, 146, 0.2);
+  background-color: rgba(83, 83, 146, 0.3);
   border: 3px solid rgb(83, 83, 146);
   border-radius: 30%;
   font-size: 1.2em;
   width: 3em;
   height: 3em;
-  color: rgb(83, 83, 146);
+  color: rgb(255, 255, 255);
 }
 
 .operatorContainer button {
-  background-color: rgba(161, 56, 56, 0.2);
+  background-color: rgba(161, 56, 56, 0.3);
   border: 3px solid rgb(146, 83, 83);
   border-radius: 30%;
   font-size: 1.2em;
   width: 2em;
   height: 2em;
-  color: rgb(146, 83, 83);
+  color: rgb(255, 255, 255);
 }
 
 .resetContainer button {
-  background-color: rgba(83, 146, 109, 0.2);
+  background-color: rgba(83, 146, 109, 0.3);
   border: 3px solid rgb(83, 146, 109);
   border-radius: 30%;
   font-size: 1.2em;
   width: 2em;
   height: 2em;
-  color: rgb(83, 146, 109);
+  color: rgb(255, 255, 255);
 }
 
 .num,
