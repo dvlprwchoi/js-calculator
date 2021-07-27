@@ -23,6 +23,10 @@ body {
     /* margin: 15px; */
 }
 
+.calContainer {
+    background-color: rgb(58, 34, 34);
+}
+
 .inputBox {
     display: flex;
     align-items: center;
@@ -79,7 +83,7 @@ body {
     height: 2em;
 }
 
-.num {
+.num, .operator, .reset {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,7 +140,7 @@ footer p {
     font-size: 1.2em;
 }
 
-@media (min-width: 415px) {
+@media (min-width: 520px) {
     body {
         background-color: skyblue;
     }
