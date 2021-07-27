@@ -5,149 +5,159 @@
 } */
 
 html {
-    min-width: 420px;
-    /* max-width: 768px; */
-    display: flex;
-    justify-content: center;
+  min-width: 420px;
+  /* max-width: 768px; */
+  display: flex;
+  justify-content: center;
 }
 
 header h1 {
-    font-size: 2.2em;
+  font-size: 2.2em;
 }
 
 body {
-    background-color: rgb(165, 126, 42);
-    border: 5px solid black;
-    border-radius: 1.5%;
-    padding: 10px;
-    /* margin: 15px; */
+  background-color: rgb(165, 126, 42);
+  border: 5px solid black;
+  border-radius: 1.5%;
+  padding: 10px;
+  /* margin: 15px; */
 }
 
 .calContainer {
-    background-color: rgb(58, 34, 34);
+  background-color: rgb(58, 34, 34);
 }
 
 .inputBox {
-    display: flex;
-    align-items: center;
-    justify-content:flex-end;
-    background-color: rgba(255, 235, 205, 0.658);
-    border: 3px solid gray;
-    font-size: 1.8em;
-    width: 240px;
-    height: 40px;    
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: rgba(255, 235, 205, 0.658);
+  border: 3px solid gray;
+  font-size: 1.8em;
+  width: 240px;
+  height: 40px;
 }
 
 .inputBoxContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 250px;
-    height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 50px;
 }
 
 .numContainer {
-    width: 250px;
-    height: 250px;
-    /* display: flex; */
-    align-content: space-evenly;
-    align-items: center;
-    justify-content: space-evenly;
-    justify-items: center;
+  width: 250px;
+  height: 250px;
+  /* display: flex; */
+  align-content: space-evenly;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-items: center;
 }
 
 .numContainer button {
-    background-color: transparent;
-    border: 3px solid rgb(83, 83, 146);
-    border-radius: 30%;
-    font-size: 1.2em;
-    width: 3em;
-    height: 3em;
+  background-color: rgba(83, 83, 146, 0.2);
+  border: 3px solid rgb(83, 83, 146);
+  border-radius: 30%;
+  font-size: 1.2em;
+  width: 3em;
+  height: 3em;
+  color: rgb(83, 83, 146);
 }
 
 .operatorContainer button {
-    background-color: transparent;
-    border: 3px solid rgb(146, 83, 83);
-    border-radius: 30%;
-    font-size: 1.2em;
-    width: 2em;
-    height: 2em;
+  background-color: rgba(161, 56, 56, 0.2);
+  border: 3px solid rgb(146, 83, 83);
+  border-radius: 30%;
+  font-size: 1.2em;
+  width: 2em;
+  height: 2em;
+  color: rgb(146, 83, 83);
 }
 
 .resetContainer button {
-    background-color: transparent;
-    border: 3px solid rgb(83, 146, 109);
-    border-radius: 30%;
-    font-size: 1.2em;
-    width: 2em;
-    height: 2em;
+  background-color: rgba(83, 146, 109, 0.2);
+  border: 3px solid rgb(83, 146, 109);
+  border-radius: 30%;
+  font-size: 1.2em;
+  width: 2em;
+  height: 2em;
+  color: rgb(83, 146, 109);
 }
 
-.num, .operator, .reset {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.num,
+.operator,
+.reset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #num0 {
-    grid-row: 4 /span 1;
-    grid-column: 2;
+  grid-row: 4 / span 1;
+  grid-column: 2;
 }
 
 .operatorContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 250px;
-    height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 250px;
+  height: 25px;
 }
 
 .resetContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 250px;
-    height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 250px;
+  height: 25px;
 }
 
-.calContainer, .inputBoxContainer, .numContainer, .operatorContainer, .resetContainer {
-    border: 3px solid gray;
-    border-radius: 3%;
-    padding: 10px;
-    margin: 15px;
+.calContainer,
+.inputBoxContainer,
+.numContainer,
+.operatorContainer,
+.resetContainer {
+  border: 3px solid gray;
+  border-radius: 3%;
+  padding: 10px;
+  margin: 15px;
 }
 
-h1, footer p {
-    text-align: center;
+h1,
+footer p {
+  text-align: center;
 }
 
 .inputButtons {
-    display: grid;
+  display: grid;
 }
 
 .numContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 3px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 3px;
 }
 
 .operatorContainer {
-    display: flex;
+  display: flex;
 }
 
 footer p {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 @media (min-width: 520px) {
-    body {
-        background-color: skyblue;
-    }
+  body {
+    background-color: skyblue;
+  }
 }
 
 @media (min-width: 769px) {
-    body {
-        background-color: gray;
-    }
+  body {
+    background-color: gray;
+  }
 }
